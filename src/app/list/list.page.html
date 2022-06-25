@@ -1,0 +1,30 @@
+<ion-header>
+  <header title="記事一覧"></header>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div>
+    <ion-card-title id="tags">タグ別に見る</ion-card-title>
+    <ion-popover trigger="tags" [dismissOnSelect]="true" >
+      <ng-template>
+        <ion-content>
+          <ion-list>
+            <ion-item [button]="true" [detail]="false" href="/category/ionic">
+              <ion-label>ionic</ion-label>
+            </ion-item>
+            <ion-item [button]="true" [detail]="false" href="/category/site">
+              <ion-label>サイト運営</ion-label>
+            </ion-item>
+            <ion-item [button]="true" [detail]="false" href="/category/pc">
+              <ion-label>pcの豆知識</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+    </div>
+  </ion-card>
+  <articles></articles>
+
+</ion-content>

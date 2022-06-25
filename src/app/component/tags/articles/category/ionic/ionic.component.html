@@ -1,0 +1,6 @@
+<ion-card *ngFor="let t of ionArticle" [button]="true" href="/article/{{t.path}}">
+  <ion-card-header>
+    <ion-card-title>{{t.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>{{t.content}}</ion-card-content>
+</ion-card>
